@@ -6,7 +6,7 @@ Oct 16, 2026 · @Jaya
 
 The player is the newly appointed chief of the Port Carrick Police Department, 40 weeks before a three-way mayoral election, in a city that is running out of money, people and patience. The game alternates two loops. In the **department loop** the player runs the force week by week: budget, hiring, firing, training, discipline, policy. In the **operation loop** the player plans a tactical response: how many officers, which ones, what they must do and must not do. Then the player presses Run and watches through what the officers see and what their body cameras record. The v0.4 simulation plays it out; the only input left is to abort.
 
-What happens in an operation is recorded in full and does not go away. Rounds through a wall, a shot at someone who was surrendering, a suspect who walked out the back: each becomes a file that surfaces weeks later as a complaint, a lawsuit, a news story or a lost ally. The election ends the game, and who wins decides how it ends for the player.
+What happens in an operation is recorded in full and does not go away. Rounds through a wall, a shot at someone who was surrendering, a suspect who walked out the back: each becomes a file that surfaces weeks later as a complaint, a lawsuit, a news story or a lost ally. Voting happens in week 40; a one-week certification period follows, and its result decides how the game ends for the player.
 
 &#91;embedded content: the two loops · immediate and delayed returns\]
 
@@ -23,6 +23,21 @@ Wounds and experience come back at the end of the operation. Everything else goe
 7. **There is no perfect playthrough.** Every officer sent to one situation is missing from another, every safe choice costs time or money, and every candidate wants something the others punish.
 
 **What the player never does:** take direct control of an officer, give orders once Run is pressed, change what happened by rewinding (rewind only replays the record), reload a save to undo an operation (ironman is the default), or see a consequence's full outcome before it lands.
+
+
+## Confirmed player experience and tone · 17 October 2026
+
+**Elevator pitch.** *Ready or Not* meets *Door Kickers* meets *This Is the Police*, except the player cannot retry missions or stop an officer from pulling a trigger; cannot pause time to give troops perfect orders; and there is no record collection or fancy sports car. The game combines the grounded human horror and stakes of *Ready or Not*, the top-down CQB framing of *Door Kickers*, and the management layer plus a small piece of the satire of *This Is the Police* into a more realistic, grounded whole.
+
+**The desk is the main game.** Day-to-day play is a spreadsheet-like chief's desk. 911 calls, anonymous tips, and calls from community leaders create time-sensitive missions; the player assigns available officers to them. The player may watch the city simulation, but does not directly command its agents. Event choices include yes/no offers, multiple choice, and Likert-scale decisions: for example, how much security to assign to an event or what level of reprimand to give an officer after civilian complaints. Unassigned work is handled by patrol or expires at a cost, rather than waiting indefinitely for the player.
+
+**Event generation.** Random events are seeded and weighted by performance across separate categories and by relationships. Eligibility and hard gates come first; RNG chooses among events the campaign state actually permits. Event sources, deadlines, and consequences should be legible, while delayed outcomes may remain uncertain.
+
+**Tone.** Black comedy and grounded satire, but never a celebratory or power-fantasy violence simulator. Aim the comedy at bureaucracy, political theatre, corporate interests, and euphemistic public relations—not at victims. The tactical operation can be tense and absorbing; the framing stays human, consequential, and uncomfortable.
+
+**Candidate alignment.** Pruett's many small, compounding benefits are mainly administrative: he can defer an oversight timetable without cancelling the inquiry and use connections to expedite approved paperwork. His support depends on the player's overall performance, not pure loyalty or perfect competence. Garrow offers visible, conditional resources—anonymous donations, access to selected community leaders, and temporary contractor support—in return for loyalty and occasional specific favours; contractors never become permanent staff. Halvorsen is hardest to win: after an initial refusal to cooperate, she can provide anonymous tips and detailed local intelligence, help reduce media pressure and moderate protests, but expects officers who cross the line to be reprimanded or fired regardless of competence.
+
+**Gang leverage.** Gang shooters can gain experience up to exceptional tactical competence without inheriting police equipment. Removing skilled shooters reduces a gang's ability to mount attacks; arresting a high-ranking member can additionally provide testimony and leverage against leaders. Leaders are named but hard to contact and protected by plausible deniability. They react to the player's observable Balance of Leverage (BOL): under sufficient pressure, a leader may restrain shooters, send an anonymous tip, or sacrifice a reckless street-level member. Such cooperation is tactical and unreliable, not a clean alliance or a shortcut to arresting the leader.
 
 ## What carries over from v0.4
 
@@ -61,13 +76,13 @@ Port Carrick stays the city, recast as a Great Lakes port that lost its steel mi
 | Police budget gap | Salaries, overtime, settlements, grants | Mayor, council, the state |
 | Trust in police, per ward | All of the above, plus what the press reports | Councillors, community groups |
 
-**The election.** Three candidates, all fictional, none tied to a real party. The election in week 40 ends the game:
+**The election.** Three candidates, all fictional, none tied to a real party. Voting takes place in week 40; the game concludes after a one-week certification period in week 41:
 
 - **Mayor Dale Pruett**, the incumbent who appointed the player. Aggressively boring: his stump speech is about procurement timelines and his slogan is "Pruett: It Mostly Works". He is a competent administrator with very few reform ideas, and one of the game's few sources of comic relief.
 - **Council President Victor Garrow**, a corrupt authoritarian who happens to be very pro-police. He holds the city's towing and demolition contracts, wants curfews and emergency powers, and has the union's ear.
 - **Councillor Anne Halvorsen**, a democratic socialist who genuinely wants to help the city and is openly, sharply critical of the police. She has a personal vendetta against the player. Proposed backstory: years ago, as a lieutenant, the player led the raid that shut down the tenants' union she organised.
 
-**Campaign calendar (40 weekly turns)**
+**Campaign calendar (40 campaign weeks plus one certification week)**
 
 | Week | Event | Why it matters |
 | --- | --- | --- |
@@ -78,7 +93,8 @@ Port Carrick stays the city, recast as a Great Lakes port that lost its steel mi
 | 26 | Mid-year budget amendment | Second chance at money, or a cut |
 | 28 | Debates and union endorsement | Candidates start using the player's record |
 | 34 | Early voting | Late scandals hit hardest; rallies get bigger |
-| 40 | Election | The game ends; the winner decides the ending (see Politics) |
+| 40 | Election day | Vote count establishes the winner and official opposition; the certification week begins |
+| 41 | Certification | Hard-gated, seeded events based on prior performance and choices; certification finalizes the result and ending |
 
 ## Loop A: the department
 
@@ -272,15 +288,15 @@ Seven allies each give the department one thing it cannot get elsewhere. Each ha
 
 **How the election is decided.** Each ward has its own mix of voters. Each week, the three candidates' support in each ward moves with the six city indicators, the department's force and competence reputations, endorsements, and whatever the press is running that week. The player is not on the ballot, but the department's record is the main issue in the race. The player can read polling once a week, with noise. Each candidate's rallies appear on the operations board: a rally that goes wrong moves votes against whoever was meant to keep it safe, which means the player and the mayor who appointed them. Garrow's rallies draw counter-protesters, and Halvorsen's draw officers' resentment.
 
-**What each result means for the player**
+**Completed-election endings and personal epilogues**
 
-| Winner | The ending for the player | The ending for the city |
-| --- | --- | --- |
-| Pruett (incumbent, boring) | Keeps the job if standing with the mayor is 25 or more; otherwise thanked at a very long press conference and quietly replaced | Four more years of adequate government. The city stops getting worse, slowly. |
-| Garrow (authoritarian, pro-police) | Keeps the job if the union is still an ally and the player never crossed him. The price is enforcing his curfews | Emergency powers and contracts for friends. The department becomes his instrument; arrests rise and trust falls everywhere. |
-| Halvorsen (democratic socialist) | Removed in her first week, whatever the record. A good force record and allied community groups change how: a negotiated exit and a public thank-you instead of a firing for cause and an inquiry | Real investment in the wards and a smaller department under civilian oversight. |
+Only a player who reaches and completes certification gets one of the completed-election outcomes. Earlier dismissal, resignation, or loss of authority is a separate campaign ending.
 
-An ending shows the ledger of everyone who died during the player's tenure: officers, suspects, gang members and civilians. There is no best ending: the result that is best for the city may be the one that costs the player the job.
+- **Six campaign-level completions:** the election winner paired with the candidate who forms the official opposition. With three candidates, these are the six ordered winner/opposition pairs.
+- **Nine personal epilogues:** the winning candidate paired with the player's relationship band with that candidate: below 30, 30–70, or above 70. At the boundaries, 30 and 70 belong to the neutral band.
+- Compose the campaign-level result and the personal epilogue rather than writing a separate monolithic ending for every combination. Voting is in week 40; hard-gated, seeded certification events occur in week 41 and depend on the player's prior performance and choices.
+
+The **neutral relationship band is the best personal epilogue**: the player remains an imperfect, moderating influence—too valuable to replace, too principled to trust blindly. High relationship looks materially good for the player but hints at political loyalty, growing cynicism, and collusion. Low relationship ends in a respectful request for early retirement, leaving the player with a sense of integrity. None is a clean victory. Every completed ending accounts for everyone who died during the player's tenure: officers, suspects, gang members, and civilians.
 
 ## Roadmap
 
@@ -348,4 +364,4 @@ The biggest risk is that watching without control feels helpless, so the debrief
 - [ ] Do minors appear among civilians, which affects the game's rating and tone?
 - [ ] Is ironman the only mode, or is there a save-anywhere difficulty?
 
-Settled on 16 October: 40 weeks; pause, slow motion and rewind as viewing tools only; abort is available; the election ends the game.
+Settled on 17 October: 40 campaign weeks followed by one certification week; pausing, slow motion, and rewind are viewing tools only; the player cannot retry or issue orders after Run; any abort is a mission-level withdrawal, never an individual hold-fire command.
