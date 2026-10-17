@@ -1,0 +1,29 @@
+; Engine configuration file.
+; The Violence - vertical slice (Godot 4.4+; tested on 4.4.1 and 4.7.2)
+
+config_version=5
+
+[application]
+
+config/name="The Violence - Vertical Slice"
+config/description="CQB autobattler test range: one shotgun house, two teams of up to two operators, 40 good and 20 bad habits."
+run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.4")
+config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1600
+window/size/viewport_height=900
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[physics]
+
+common/physics_ticks_per_second=60
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.925, 0.925, 0.925, 1)
