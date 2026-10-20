@@ -1,0 +1,2325 @@
+{
+ "pack": "red-ink",
+ "version": 1,
+ "generator": "tools/make_redink_assets.py",
+ "license": "original, project-owned",
+ "px_per_metre": 80,
+ "facing": "+x",
+ "palette": {
+  "paper": "#EDEDE8",
+  "floor": "#D4D4CF",
+  "light": "#BFBFBA",
+  "mid": "#737370",
+  "dark": "#2B2B2B",
+  "ink": "#121212",
+  "red": "#B31F26"
+ },
+ "layers": [
+  "base",
+  "ink",
+  "red_mask",
+  "print"
+ ],
+ "masks": "white on transparent; tint with shaders/red_mask.gdshader or Ink.accent()",
+ "files": [
+  {
+   "path": "tiles/floor_plain.svg",
+   "name": "floor_plain",
+   "category": "tiles",
+   "layer": "base",
+   "anchor": "top-left",
+   "size_px": [
+    80,
+    80
+   ],
+   "metres": [
+    1.0,
+    1.0
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "concrete",
+    "1m"
+   ],
+   "note": ""
+  },
+  {
+   "path": "tiles/floor_plank.svg",
+   "name": "floor_plank",
+   "category": "tiles",
+   "layer": "base",
+   "anchor": "top-left",
+   "size_px": [
+    80,
+    80
+   ],
+   "metres": [
+    1.0,
+    1.0
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "board",
+    "1m"
+   ],
+   "note": ""
+  },
+  {
+   "path": "tiles/floor_tile.svg",
+   "name": "floor_tile",
+   "category": "tiles",
+   "layer": "base",
+   "anchor": "top-left",
+   "size_px": [
+    80,
+    80
+   ],
+   "metres": [
+    1.0,
+    1.0
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "checker",
+    "1m"
+   ],
+   "note": ""
+  },
+  {
+   "path": "tiles/floor_lino.svg",
+   "name": "floor_lino",
+   "category": "tiles",
+   "layer": "base",
+   "anchor": "top-left",
+   "size_px": [
+    80,
+    80
+   ],
+   "metres": [
+    1.0,
+    1.0
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "institutional",
+    "1m"
+   ],
+   "note": ""
+  },
+  {
+   "path": "tiles/floor_carpet.svg",
+   "name": "floor_carpet",
+   "category": "tiles",
+   "layer": "base",
+   "anchor": "top-left",
+   "size_px": [
+    80,
+    80
+   ],
+   "metres": [
+    1.0,
+    1.0
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "office",
+    "1m"
+   ],
+   "note": ""
+  },
+  {
+   "path": "tiles/floor_deck.svg",
+   "name": "floor_deck",
+   "category": "tiles",
+   "layer": "base",
+   "anchor": "top-left",
+   "size_px": [
+    80,
+    80
+   ],
+   "metres": [
+    1.0,
+    1.0
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "exterior",
+    "1m"
+   ],
+   "note": ""
+  },
+  {
+   "path": "tiles/floor_yard.svg",
+   "name": "floor_yard",
+   "category": "tiles",
+   "layer": "base",
+   "anchor": "top-left",
+   "size_px": [
+    80,
+    80
+   ],
+   "metres": [
+    1.0,
+    1.0
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "exterior",
+    "1m"
+   ],
+   "note": ""
+  },
+  {
+   "path": "tiles/floor_studs.svg",
+   "name": "floor_studs",
+   "category": "tiles",
+   "layer": "base",
+   "anchor": "top-left",
+   "size_px": [
+    80,
+    80
+   ],
+   "metres": [
+    1.0,
+    1.0
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "notation",
+    "1m"
+   ],
+   "note": ""
+  },
+  {
+   "path": "tiles/print_grain.svg",
+   "name": "print_grain",
+   "category": "tiles",
+   "layer": "base",
+   "anchor": "top-left",
+   "size_px": [
+    80,
+    80
+   ],
+   "metres": [
+    1.0,
+    1.0
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "print",
+    "1m"
+   ],
+   "note": ""
+  },
+  {
+   "path": "tiles/wall_straight.svg",
+   "name": "wall_straight",
+   "category": "tiles",
+   "layer": "base",
+   "anchor": "top-left",
+   "size_px": [
+    80,
+    20
+   ],
+   "metres": [
+    1.0,
+    0.25
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "solid cover",
+    "1m"
+   ],
+   "note": ""
+  },
+  {
+   "path": "tiles/wall_stack.svg",
+   "name": "wall_stack",
+   "category": "tiles",
+   "layer": "base",
+   "anchor": "top-left",
+   "size_px": [
+    80,
+    20
+   ],
+   "metres": [
+    1.0,
+    0.25
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "solid cover",
+    "1m"
+   ],
+   "note": ""
+  },
+  {
+   "path": "tiles/wall_window.svg",
+   "name": "wall_window",
+   "category": "tiles",
+   "layer": "base",
+   "anchor": "top-left",
+   "size_px": [
+    80,
+    20
+   ],
+   "metres": [
+    1.0,
+    0.25
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "window",
+    "1m"
+   ],
+   "note": ""
+  },
+  {
+   "path": "tiles/wall_doorway.svg",
+   "name": "wall_doorway",
+   "category": "tiles",
+   "layer": "base",
+   "anchor": "top-left",
+   "size_px": [
+    80,
+    80
+   ],
+   "metres": [
+    1.0,
+    1.0
+   ],
+   "states": [
+    "theory"
+   ],
+   "tags": [
+    "door swing",
+    "1m"
+   ],
+   "note": ""
+  },
+  {
+   "path": "tiles/wall_half.svg",
+   "name": "wall_half",
+   "category": "tiles",
+   "layer": "base",
+   "anchor": "top-left",
+   "size_px": [
+    80,
+    20
+   ],
+   "metres": [
+    1.0,
+    0.25
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "half cover",
+    "1m"
+   ],
+   "note": ""
+  },
+  {
+   "path": "tiles/wall_corner.svg",
+   "name": "wall_corner",
+   "category": "tiles",
+   "layer": "base",
+   "anchor": "top-left",
+   "size_px": [
+    22,
+    22
+   ],
+   "metres": [
+    0.275,
+    0.275
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "corner",
+    "1m"
+   ],
+   "note": ""
+  },
+  {
+   "path": "tiles/fence.svg",
+   "name": "fence",
+   "category": "tiles",
+   "layer": "base",
+   "anchor": "top-left",
+   "size_px": [
+    80,
+    20
+   ],
+   "metres": [
+    1.0,
+    0.25
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "concealment",
+    "1m"
+   ],
+   "note": ""
+  },
+  {
+   "path": "tiles/stairs.svg",
+   "name": "stairs",
+   "category": "tiles",
+   "layer": "base",
+   "anchor": "top-left",
+   "size_px": [
+    80,
+    80
+   ],
+   "metres": [
+    1.0,
+    1.0
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "vertical",
+    "1m"
+   ],
+   "note": ""
+  },
+  {
+   "path": "tiles/breach.svg",
+   "name": "breach",
+   "category": "tiles",
+   "layer": "base",
+   "anchor": "top-left",
+   "size_px": [
+    80,
+    80
+   ],
+   "metres": [
+    1.0,
+    1.0
+   ],
+   "states": [
+    "application"
+   ],
+   "tags": [
+    "aftermath",
+    "1m"
+   ],
+   "note": ""
+  },
+  {
+   "path": "props/desk.svg",
+   "name": "desk",
+   "category": "props",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    112,
+    56
+   ],
+   "metres": [
+    1.4,
+    0.7
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "office",
+    "cover"
+   ],
+   "note": ""
+  },
+  {
+   "path": "props/chair.svg",
+   "name": "chair",
+   "category": "props",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    44,
+    44
+   ],
+   "metres": [
+    0.55,
+    0.55
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "seating",
+    "prop"
+   ],
+   "note": ""
+  },
+  {
+   "path": "props/table.svg",
+   "name": "table",
+   "category": "props",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    128,
+    72
+   ],
+   "metres": [
+    1.6,
+    0.9
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "table",
+    "cover"
+   ],
+   "note": ""
+  },
+  {
+   "path": "props/bed.svg",
+   "name": "bed",
+   "category": "props",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    160,
+    72
+   ],
+   "metres": [
+    2.0,
+    0.9
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "bedroom",
+    "cover"
+   ],
+   "note": ""
+  },
+  {
+   "path": "props/bunk.svg",
+   "name": "bunk",
+   "category": "props",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    160,
+    72
+   ],
+   "metres": [
+    2.0,
+    0.9
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "bedroom",
+    "cover"
+   ],
+   "note": ""
+  },
+  {
+   "path": "props/sofa.svg",
+   "name": "sofa",
+   "category": "props",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    160,
+    68
+   ],
+   "metres": [
+    2.0,
+    0.85
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "lounge",
+    "prop"
+   ],
+   "note": ""
+  },
+  {
+   "path": "props/cabinet.svg",
+   "name": "cabinet",
+   "category": "props",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    72,
+    44
+   ],
+   "metres": [
+    0.9,
+    0.55
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "storage",
+    "cover"
+   ],
+   "note": ""
+  },
+  {
+   "path": "props/lockers.svg",
+   "name": "lockers",
+   "category": "props",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    96,
+    44
+   ],
+   "metres": [
+    1.2,
+    0.55
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "storage",
+    "cover"
+   ],
+   "note": ""
+  },
+  {
+   "path": "props/shelving.svg",
+   "name": "shelving",
+   "category": "props",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    144,
+    40
+   ],
+   "metres": [
+    1.8,
+    0.5
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "storage",
+    "cover"
+   ],
+   "note": ""
+  },
+  {
+   "path": "props/fridge.svg",
+   "name": "fridge",
+   "category": "props",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    56,
+    56
+   ],
+   "metres": [
+    0.7,
+    0.7
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "kitchen",
+    "cover"
+   ],
+   "note": ""
+  },
+  {
+   "path": "props/counter.svg",
+   "name": "counter",
+   "category": "props",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    144,
+    48
+   ],
+   "metres": [
+    1.8,
+    0.6
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "kitchen",
+    "cover"
+   ],
+   "note": ""
+  },
+  {
+   "path": "props/crate.svg",
+   "name": "crate",
+   "category": "props",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    48,
+    48
+   ],
+   "metres": [
+    0.6,
+    0.6
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "storage",
+    "cover"
+   ],
+   "note": ""
+  },
+  {
+   "path": "props/pallet.svg",
+   "name": "pallet",
+   "category": "props",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    96,
+    80
+   ],
+   "metres": [
+    1.2,
+    1.0
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "storage",
+    "cover"
+   ],
+   "note": ""
+  },
+  {
+   "path": "props/dumpster.svg",
+   "name": "dumpster",
+   "category": "props",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    160,
+    96
+   ],
+   "metres": [
+    2.0,
+    1.2
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "yard",
+    "prop"
+   ],
+   "note": ""
+  },
+  {
+   "path": "props/ac_unit.svg",
+   "name": "ac_unit",
+   "category": "props",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    80,
+    80
+   ],
+   "metres": [
+    1.0,
+    1.0
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "roof",
+    "prop"
+   ],
+   "note": ""
+  },
+  {
+   "path": "props/tree.svg",
+   "name": "tree",
+   "category": "props",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    124,
+    124
+   ],
+   "metres": [
+    1.55,
+    1.55
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "yard",
+    "prop"
+   ],
+   "note": ""
+  },
+  {
+   "path": "props/planter.svg",
+   "name": "planter",
+   "category": "props",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    80,
+    40
+   ],
+   "metres": [
+    1.0,
+    0.5
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "yard",
+    "prop"
+   ],
+   "note": ""
+  },
+  {
+   "path": "props/rack.svg",
+   "name": "rack",
+   "category": "props",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    120,
+    40
+   ],
+   "metres": [
+    1.5,
+    0.5
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "armoury",
+    "prop"
+   ],
+   "note": ""
+  },
+  {
+   "path": "props/basin.svg",
+   "name": "basin",
+   "category": "props",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    64,
+    44
+   ],
+   "metres": [
+    0.8,
+    0.55
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "wet",
+    "prop"
+   ],
+   "note": ""
+  },
+  {
+   "path": "props/toilet.svg",
+   "name": "toilet",
+   "category": "props",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    48,
+    60
+   ],
+   "metres": [
+    0.6,
+    0.75
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "wet",
+    "prop"
+   ],
+   "note": ""
+  },
+  {
+   "path": "props/stove.svg",
+   "name": "stove",
+   "category": "props",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    56,
+    56
+   ],
+   "metres": [
+    0.7,
+    0.7
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "kitchen",
+    "cover"
+   ],
+   "note": ""
+  },
+  {
+   "path": "props/sink.svg",
+   "name": "sink",
+   "category": "props",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    80,
+    46
+   ],
+   "metres": [
+    1.0,
+    0.575
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "wet",
+    "prop"
+   ],
+   "note": ""
+  },
+  {
+   "path": "props/washer.svg",
+   "name": "washer",
+   "category": "props",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    56,
+    56
+   ],
+   "metres": [
+    0.7,
+    0.7
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "utility",
+    "prop"
+   ],
+   "note": ""
+  },
+  {
+   "path": "props/dresser.svg",
+   "name": "dresser",
+   "category": "props",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    64,
+    44
+   ],
+   "metres": [
+    0.8,
+    0.55
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "bedroom",
+    "cover"
+   ],
+   "note": ""
+  },
+  {
+   "path": "props/wardrobe.svg",
+   "name": "wardrobe",
+   "category": "props",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    48,
+    88
+   ],
+   "metres": [
+    0.6,
+    1.1
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "bedroom",
+    "cover"
+   ],
+   "note": ""
+  },
+  {
+   "path": "props/stretcher.svg",
+   "name": "stretcher",
+   "category": "props",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    160,
+    52
+   ],
+   "metres": [
+    2.0,
+    0.65
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "medical",
+    "prop"
+   ],
+   "note": ""
+  },
+  {
+   "path": "props/car.svg",
+   "name": "car",
+   "category": "props",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    352,
+    152
+   ],
+   "metres": [
+    4.4,
+    1.9
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "vehicle",
+    "yard"
+   ],
+   "note": ""
+  },
+  {
+   "path": "props/police_car.svg",
+   "name": "police_car",
+   "category": "props",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    352,
+    152
+   ],
+   "metres": [
+    4.4,
+    1.9
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "vehicle",
+    "police"
+   ],
+   "note": ""
+  },
+  {
+   "path": "actors/officer_stand.svg",
+   "name": "officer_stand",
+   "category": "actors",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    64,
+    64
+   ],
+   "metres": [
+    0.8,
+    0.8
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "officer",
+    "0.8m"
+   ],
+   "note": "faces +x"
+  },
+  {
+   "path": "actors/officer_down.svg",
+   "name": "officer_down",
+   "category": "actors",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    152,
+    72
+   ],
+   "metres": [
+    1.9,
+    0.9
+   ],
+   "states": [
+    "application"
+   ],
+   "tags": [
+    "officer",
+    "1.9m"
+   ],
+   "note": "lying, long axis +x"
+  },
+  {
+   "path": "actors/qrf_stand.svg",
+   "name": "qrf_stand",
+   "category": "actors",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    64,
+    64
+   ],
+   "metres": [
+    0.8,
+    0.8
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "qrf",
+    "0.8m"
+   ],
+   "note": "faces +x"
+  },
+  {
+   "path": "actors/qrf_down.svg",
+   "name": "qrf_down",
+   "category": "actors",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    152,
+    72
+   ],
+   "metres": [
+    1.9,
+    0.9
+   ],
+   "states": [
+    "application"
+   ],
+   "tags": [
+    "qrf",
+    "1.9m"
+   ],
+   "note": "lying, long axis +x"
+  },
+  {
+   "path": "actors/medic_stand.svg",
+   "name": "medic_stand",
+   "category": "actors",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    64,
+    64
+   ],
+   "metres": [
+    0.8,
+    0.8
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "medic",
+    "0.8m"
+   ],
+   "note": "faces +x"
+  },
+  {
+   "path": "actors/medic_down.svg",
+   "name": "medic_down",
+   "category": "actors",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    152,
+    72
+   ],
+   "metres": [
+    1.9,
+    0.9
+   ],
+   "states": [
+    "application"
+   ],
+   "tags": [
+    "medic",
+    "1.9m"
+   ],
+   "note": "lying, long axis +x"
+  },
+  {
+   "path": "actors/suspect_stand.svg",
+   "name": "suspect_stand",
+   "category": "actors",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    64,
+    64
+   ],
+   "metres": [
+    0.8,
+    0.8
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "suspect",
+    "0.8m"
+   ],
+   "note": "faces +x"
+  },
+  {
+   "path": "actors/suspect_down.svg",
+   "name": "suspect_down",
+   "category": "actors",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    152,
+    72
+   ],
+   "metres": [
+    1.9,
+    0.9
+   ],
+   "states": [
+    "application"
+   ],
+   "tags": [
+    "suspect",
+    "1.9m"
+   ],
+   "note": "lying, long axis +x"
+  },
+  {
+   "path": "actors/civilian_stand.svg",
+   "name": "civilian_stand",
+   "category": "actors",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    64,
+    64
+   ],
+   "metres": [
+    0.8,
+    0.8
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "civilian",
+    "0.8m"
+   ],
+   "note": "faces +x"
+  },
+  {
+   "path": "actors/civilian_down.svg",
+   "name": "civilian_down",
+   "category": "actors",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    152,
+    72
+   ],
+   "metres": [
+    1.9,
+    0.9
+   ],
+   "states": [
+    "application"
+   ],
+   "tags": [
+    "civilian",
+    "1.9m"
+   ],
+   "note": "lying, long axis +x"
+  },
+  {
+   "path": "actors/suspect_surrender.svg",
+   "name": "suspect_surrender",
+   "category": "actors",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    64,
+    64
+   ],
+   "metres": [
+    0.8,
+    0.8
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "suspect",
+    "surrender"
+   ],
+   "note": ""
+  },
+  {
+   "path": "actors/civilian_surrender.svg",
+   "name": "civilian_surrender",
+   "category": "actors",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    64,
+    64
+   ],
+   "metres": [
+    0.8,
+    0.8
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "civilian",
+    "surrender"
+   ],
+   "note": ""
+  },
+  {
+   "path": "actors/suspect_cuffed.svg",
+   "name": "suspect_cuffed",
+   "category": "actors",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    64,
+    64
+   ],
+   "metres": [
+    0.8,
+    0.8
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "suspect",
+    "arrest"
+   ],
+   "note": ""
+  },
+  {
+   "path": "actors/civilian_cuffed.svg",
+   "name": "civilian_cuffed",
+   "category": "actors",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    64,
+    64
+   ],
+   "metres": [
+    0.8,
+    0.8
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "civilian",
+    "arrest"
+   ],
+   "note": ""
+  },
+  {
+   "path": "actors/shadow_stand.svg",
+   "name": "shadow_stand",
+   "category": "actors",
+   "layer": "ink",
+   "anchor": "centre",
+   "size_px": [
+    64,
+    64
+   ],
+   "metres": [
+    0.8,
+    0.8
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "shadow"
+   ],
+   "note": ""
+  },
+  {
+   "path": "actors/shadow_down.svg",
+   "name": "shadow_down",
+   "category": "actors",
+   "layer": "ink",
+   "anchor": "centre",
+   "size_px": [
+    152,
+    72
+   ],
+   "metres": [
+    1.9,
+    0.9
+   ],
+   "states": [
+    "application"
+   ],
+   "tags": [
+    "shadow"
+   ],
+   "note": ""
+  },
+  {
+   "path": "actors/rifle.svg",
+   "name": "rifle",
+   "category": "actors",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    76,
+    16
+   ],
+   "metres": [
+    0.95,
+    0.2
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "weapon"
+   ],
+   "note": ""
+  },
+  {
+   "path": "actors/pistol.svg",
+   "name": "pistol",
+   "category": "actors",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    34,
+    14
+   ],
+   "metres": [
+    0.425,
+    0.175
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "weapon"
+   ],
+   "note": ""
+  },
+  {
+   "path": "marks/evidence_1.svg",
+   "name": "evidence_1",
+   "category": "marks",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    48,
+    48
+   ],
+   "metres": [
+    0.6,
+    0.6
+   ],
+   "states": [
+    "application"
+   ],
+   "tags": [
+    "evidence",
+    "numbered"
+   ],
+   "note": ""
+  },
+  {
+   "path": "marks/evidence_2.svg",
+   "name": "evidence_2",
+   "category": "marks",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    48,
+    48
+   ],
+   "metres": [
+    0.6,
+    0.6
+   ],
+   "states": [
+    "application"
+   ],
+   "tags": [
+    "evidence",
+    "numbered"
+   ],
+   "note": ""
+  },
+  {
+   "path": "marks/evidence_3.svg",
+   "name": "evidence_3",
+   "category": "marks",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    48,
+    48
+   ],
+   "metres": [
+    0.6,
+    0.6
+   ],
+   "states": [
+    "application"
+   ],
+   "tags": [
+    "evidence",
+    "numbered"
+   ],
+   "note": ""
+  },
+  {
+   "path": "marks/evidence_4.svg",
+   "name": "evidence_4",
+   "category": "marks",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    48,
+    48
+   ],
+   "metres": [
+    0.6,
+    0.6
+   ],
+   "states": [
+    "application"
+   ],
+   "tags": [
+    "evidence",
+    "numbered"
+   ],
+   "note": ""
+  },
+  {
+   "path": "marks/paper_1.svg",
+   "name": "paper_1",
+   "category": "marks",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    52,
+    62
+   ],
+   "metres": [
+    0.65,
+    0.775
+   ],
+   "states": [
+    "application"
+   ],
+   "tags": [
+    "paperwork"
+   ],
+   "note": ""
+  },
+  {
+   "path": "marks/paper_2.svg",
+   "name": "paper_2",
+   "category": "marks",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    52,
+    62
+   ],
+   "metres": [
+    0.65,
+    0.775
+   ],
+   "states": [
+    "application"
+   ],
+   "tags": [
+    "paperwork"
+   ],
+   "note": ""
+  },
+  {
+   "path": "marks/paper_3.svg",
+   "name": "paper_3",
+   "category": "marks",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    52,
+    62
+   ],
+   "metres": [
+    0.65,
+    0.775
+   ],
+   "states": [
+    "application"
+   ],
+   "tags": [
+    "paperwork"
+   ],
+   "note": ""
+  },
+  {
+   "path": "marks/form.svg",
+   "name": "form",
+   "category": "marks",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    64,
+    88
+   ],
+   "metres": [
+    0.8,
+    1.1
+   ],
+   "states": [
+    "application"
+   ],
+   "tags": [
+    "paperwork",
+    "form"
+   ],
+   "note": ""
+  },
+  {
+   "path": "marks/casing.svg",
+   "name": "casing",
+   "category": "marks",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    11,
+    8
+   ],
+   "metres": [
+    0.138,
+    0.1
+   ],
+   "states": [
+    "application"
+   ],
+   "tags": [
+    "brass"
+   ],
+   "note": ""
+  },
+  {
+   "path": "marks/glass.svg",
+   "name": "glass",
+   "category": "marks",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    48,
+    48
+   ],
+   "metres": [
+    0.6,
+    0.6
+   ],
+   "states": [
+    "application"
+   ],
+   "tags": [
+    "aftermath"
+   ],
+   "note": ""
+  },
+  {
+   "path": "marks/scuff_1.svg",
+   "name": "scuff_1",
+   "category": "marks",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    64,
+    32
+   ],
+   "metres": [
+    0.8,
+    0.4
+   ],
+   "states": [
+    "application"
+   ],
+   "tags": [
+    "aftermath"
+   ],
+   "note": ""
+  },
+  {
+   "path": "marks/scuff_2.svg",
+   "name": "scuff_2",
+   "category": "marks",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    64,
+    32
+   ],
+   "metres": [
+    0.8,
+    0.4
+   ],
+   "states": [
+    "application"
+   ],
+   "tags": [
+    "aftermath"
+   ],
+   "note": ""
+  },
+  {
+   "path": "marks/body_tag.svg",
+   "name": "body_tag",
+   "category": "marks",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    22,
+    32
+   ],
+   "metres": [
+    0.275,
+    0.4
+   ],
+   "states": [
+    "application"
+   ],
+   "tags": [
+    "medical"
+   ],
+   "note": ""
+  },
+  {
+   "path": "masks/blood_pool_1.svg",
+   "name": "blood_pool_1",
+   "category": "masks",
+   "layer": "red_mask",
+   "anchor": "centre",
+   "size_px": [
+    128,
+    128
+   ],
+   "metres": [
+    1.6,
+    1.6
+   ],
+   "states": [
+    "application"
+   ],
+   "tags": [
+    "gore",
+    "white-mask"
+   ],
+   "note": "white on transparent; hue from shader"
+  },
+  {
+   "path": "masks/blood_pool_2.svg",
+   "name": "blood_pool_2",
+   "category": "masks",
+   "layer": "red_mask",
+   "anchor": "centre",
+   "size_px": [
+    128,
+    128
+   ],
+   "metres": [
+    1.6,
+    1.6
+   ],
+   "states": [
+    "application"
+   ],
+   "tags": [
+    "gore",
+    "white-mask"
+   ],
+   "note": "white on transparent; hue from shader"
+  },
+  {
+   "path": "masks/blood_trail.svg",
+   "name": "blood_trail",
+   "category": "masks",
+   "layer": "red_mask",
+   "anchor": "centre",
+   "size_px": [
+    320,
+    64
+   ],
+   "metres": [
+    4.0,
+    0.8
+   ],
+   "states": [
+    "application"
+   ],
+   "tags": [
+    "gore",
+    "white-mask"
+   ],
+   "note": "white on transparent; hue from shader"
+  },
+  {
+   "path": "masks/blood_smear.svg",
+   "name": "blood_smear",
+   "category": "masks",
+   "layer": "red_mask",
+   "anchor": "centre",
+   "size_px": [
+    96,
+    56
+   ],
+   "metres": [
+    1.2,
+    0.7
+   ],
+   "states": [
+    "application"
+   ],
+   "tags": [
+    "gore",
+    "white-mask"
+   ],
+   "note": "white on transparent; hue from shader"
+  },
+  {
+   "path": "masks/blood_flecks_1.svg",
+   "name": "blood_flecks_1",
+   "category": "masks",
+   "layer": "red_mask",
+   "anchor": "centre",
+   "size_px": [
+    64,
+    64
+   ],
+   "metres": [
+    0.8,
+    0.8
+   ],
+   "states": [
+    "application"
+   ],
+   "tags": [
+    "gore",
+    "white-mask"
+   ],
+   "note": "white on transparent; hue from shader"
+  },
+  {
+   "path": "masks/blood_flecks_2.svg",
+   "name": "blood_flecks_2",
+   "category": "masks",
+   "layer": "red_mask",
+   "anchor": "centre",
+   "size_px": [
+    64,
+    64
+   ],
+   "metres": [
+    0.8,
+    0.8
+   ],
+   "states": [
+    "application"
+   ],
+   "tags": [
+    "gore",
+    "white-mask"
+   ],
+   "note": "white on transparent; hue from shader"
+  },
+  {
+   "path": "masks/spill_wash.svg",
+   "name": "spill_wash",
+   "category": "masks",
+   "layer": "red_mask",
+   "anchor": "centre",
+   "size_px": [
+    160,
+    160
+   ],
+   "metres": [
+    2.0,
+    2.0
+   ],
+   "states": [
+    "application"
+   ],
+   "tags": [
+    "gore",
+    "white-mask"
+   ],
+   "note": "white on transparent; hue from shader"
+  },
+  {
+   "path": "masks/ring_1.svg",
+   "name": "ring_1",
+   "category": "masks",
+   "layer": "red_mask",
+   "anchor": "centre",
+   "size_px": [
+    72,
+    72
+   ],
+   "metres": [
+    0.9,
+    0.9
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "route",
+    "numbered"
+   ],
+   "note": ""
+  },
+  {
+   "path": "masks/ring_2.svg",
+   "name": "ring_2",
+   "category": "masks",
+   "layer": "red_mask",
+   "anchor": "centre",
+   "size_px": [
+    72,
+    72
+   ],
+   "metres": [
+    0.9,
+    0.9
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "route",
+    "numbered"
+   ],
+   "note": ""
+  },
+  {
+   "path": "masks/ring_3.svg",
+   "name": "ring_3",
+   "category": "masks",
+   "layer": "red_mask",
+   "anchor": "centre",
+   "size_px": [
+    72,
+    72
+   ],
+   "metres": [
+    0.9,
+    0.9
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "route",
+    "numbered"
+   ],
+   "note": ""
+  },
+  {
+   "path": "masks/ring_4.svg",
+   "name": "ring_4",
+   "category": "masks",
+   "layer": "red_mask",
+   "anchor": "centre",
+   "size_px": [
+    72,
+    72
+   ],
+   "metres": [
+    0.9,
+    0.9
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "route",
+    "numbered"
+   ],
+   "note": ""
+  },
+  {
+   "path": "masks/ring_5.svg",
+   "name": "ring_5",
+   "category": "masks",
+   "layer": "red_mask",
+   "anchor": "centre",
+   "size_px": [
+    72,
+    72
+   ],
+   "metres": [
+    0.9,
+    0.9
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "route",
+    "numbered"
+   ],
+   "note": ""
+  },
+  {
+   "path": "masks/route_arrow.svg",
+   "name": "route_arrow",
+   "category": "masks",
+   "layer": "red_mask",
+   "anchor": "centre",
+   "size_px": [
+    72,
+    40
+   ],
+   "metres": [
+    0.9,
+    0.5
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "route"
+   ],
+   "note": ""
+  },
+  {
+   "path": "masks/beacon.svg",
+   "name": "beacon",
+   "category": "masks",
+   "layer": "red_mask",
+   "anchor": "centre",
+   "size_px": [
+    80,
+    80
+   ],
+   "metres": [
+    1.0,
+    1.0
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "alarm"
+   ],
+   "note": ""
+  },
+  {
+   "path": "masks/stamp_filed.svg",
+   "name": "stamp_filed",
+   "category": "masks",
+   "layer": "red_mask",
+   "anchor": "centre",
+   "size_px": [
+    76,
+    26
+   ],
+   "metres": [
+    0.95,
+    0.325
+   ],
+   "states": [
+    "application"
+   ],
+   "tags": [
+    "stamp"
+   ],
+   "note": ""
+  },
+  {
+   "path": "masks/stamp_open.svg",
+   "name": "stamp_open",
+   "category": "masks",
+   "layer": "red_mask",
+   "anchor": "centre",
+   "size_px": [
+    160,
+    26
+   ],
+   "metres": [
+    2.0,
+    0.325
+   ],
+   "states": [
+    "application"
+   ],
+   "tags": [
+    "stamp"
+   ],
+   "note": ""
+  },
+  {
+   "path": "ui/north.svg",
+   "name": "north",
+   "category": "ui",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    72,
+    104
+   ],
+   "metres": [
+    0.9,
+    1.3
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "compass"
+   ],
+   "note": ""
+  },
+  {
+   "path": "ui/scale.svg",
+   "name": "scale",
+   "category": "ui",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    170,
+    30
+   ],
+   "metres": [
+    2.125,
+    0.375
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "scale"
+   ],
+   "note": ""
+  },
+  {
+   "path": "ui/stamp_theory.svg",
+   "name": "stamp_theory",
+   "category": "ui",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    198,
+    26
+   ],
+   "metres": [
+    2.475,
+    0.325
+   ],
+   "states": [
+    "theory"
+   ],
+   "tags": [
+    "stamp"
+   ],
+   "note": ""
+  },
+  {
+   "path": "ui/stamp_application.svg",
+   "name": "stamp_application",
+   "category": "ui",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    174,
+    26
+   ],
+   "metres": [
+    2.175,
+    0.325
+   ],
+   "states": [
+    "application"
+   ],
+   "tags": [
+    "stamp"
+   ],
+   "note": ""
+  },
+  {
+   "path": "ui/title_plate.svg",
+   "name": "title_plate",
+   "category": "ui",
+   "layer": "base",
+   "anchor": "centre",
+   "size_px": [
+    252,
+    56
+   ],
+   "metres": [
+    3.15,
+    0.7
+   ],
+   "states": [
+    "theory",
+    "application"
+   ],
+   "tags": [
+    "plate"
+   ],
+   "note": ""
+  }
+ ]
+}
